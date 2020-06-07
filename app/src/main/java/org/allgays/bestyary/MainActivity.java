@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler)  ;
 
         //Query
-        Query query = firebaseFirestore.collection("Monsters").orderBy("monster_name");
+        Query query = firebaseFirestore.collection("Monsters").orderBy("name");
         //RecyclerOptions
         FirestoreRecyclerOptions<Monster> options = new FirestoreRecyclerOptions.Builder<Monster>()
                 .setQuery(query, Monster.class)
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull MonsterViewHolder holder, int position, @NonNull Monster model) {
-                holder.monster_name.setText(model.getMonster_name());
-                holder.monster_type.setText(model.getMonster_type());
-                holder.monster_danger.setText(model.getMonster_danger());
+                holder.monster_name.setText(model.getName());
+                holder.monster_type.setText(model.getType());
+                holder.monster_danger.setText(model.getDanger());
 
             }
         };

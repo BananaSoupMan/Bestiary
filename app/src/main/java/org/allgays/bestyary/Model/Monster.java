@@ -1,37 +1,37 @@
 package org.allgays.bestyary.Model;
 
 public class Monster {
-    private String monster_name, monster_danger, monster_type;
+    private String name, danger, type;
 
     private Monster() {}
 
-    public Monster(String monster_name, String monster_danger, String monster_type) {
-        this.monster_name = monster_name;
-        this.monster_danger = monster_danger;
-        this.monster_type = monster_type;
+    public Monster(String name, String danger, String type) {
+        this.name = name;
+        this.danger = danger;
+        this.type = type;
     }
 
-    public String getMonster_name() {
-        return monster_name;
+    public String getName() {
+        return name;
     }
 
-    public void setMonster_name(String monster_name) {
-        this.monster_name = monster_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getMonster_danger() {
-        return monster_danger;
+    public String getDanger() {
+        return danger;
     }
 
-    public void setMonster_danger(String monster_danger) {
-        this.monster_danger = monster_danger;
+    public void setDanger(String danger) {
+        this.danger = danger;
     }
 
-    public String getMonster_type() {
-        return monster_type;
+    public String getType() {
+        return type;
     }
 
-    public void setMonster_type(String monster_type) {
-        this.monster_type = monster_type;
+    public void setType(String type) {
+        this.type = type;
     }
 }
