@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BestiaryD20</string>
+    <string name="danger">Опасность: </string>
+    <string name="armor">Класс Доспеха</string>
+    <string name="hp">Хиты</string>
+    <string name="speed">Скорость</string>
+</resources>
